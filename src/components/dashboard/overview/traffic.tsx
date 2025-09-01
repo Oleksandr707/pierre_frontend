@@ -33,8 +33,8 @@ export function Traffic({ sx }: TrafficProps): React.JSX.Element {
           setLabels([`This Year (${new Date().getFullYear()})`, `Last Year (${new Date().getFullYear() - 1})`]);
           setChartSeries([data.thisYear, data.lastYear]);
         }
-      } catch (err) {
-        console.error('❌ Error fetching yearly totals:', err);
+      } catch (error) {
+        console.error('❌ Error fetching yearly totals:', error);
       }
     };
     fetchTotals();

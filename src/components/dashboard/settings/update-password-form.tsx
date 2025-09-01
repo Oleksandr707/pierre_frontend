@@ -51,8 +51,8 @@ export function UpdatePasswordForm(): React.JSX.Element {
       setMessage('Password updated successfully!');
       setPassword('');
       setConfirmPassword('');
-    } catch (err) {
-      console.error(err);
+    } catch (error) {
+      console.error(error);
       setError('Network error');
     }
   };

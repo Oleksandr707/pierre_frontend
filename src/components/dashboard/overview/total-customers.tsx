@@ -33,8 +33,8 @@ export function TotalCustomers({ diff, trend, sx }: TotalCustomersProps): React.
         if (res.ok) {
           setTotal(data.total);
         }
-      } catch (err) {
-        console.error('❌ Error fetching total customers:', err);
+      } catch (error) {
+        console.error('❌ Error fetching total customers:', error);
       }
     };
 

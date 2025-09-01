@@ -46,8 +46,8 @@ export function Sales({ sx }: SalesProps): React.JSX.Element {
           { name: `Last Year (${new Date().getFullYear() - 1})`, data: lastYearData },
         ]);
       }
-    } catch (err) {
-      console.error('❌ Error fetching stats:', err);
+    } catch (error) {
+      console.error('❌ Error fetching stats:', error);
     }
   };
 

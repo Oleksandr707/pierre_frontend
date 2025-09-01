@@ -61,8 +61,8 @@ export function LatestCustomers({ sx }: LatestCustomersProps): React.JSX.Element
             }))
           );
         }
-      } catch (err) {
-        console.error('❌ Error fetching latest customers:', err);
+      } catch (error) {
+        console.error('❌ Error fetching latest customers:', error);
       }
     };
 

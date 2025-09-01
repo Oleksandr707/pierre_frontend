@@ -1,7 +1,6 @@
 'use client';
 
 import * as React from 'react';
-import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import { PlusIcon } from '@phosphor-icons/react/dist/ssr/Plus';
@@ -87,8 +86,3 @@ export default function CustomersClient(): React.JSX.Element {
     );
   }
   
-  
-
-// function applyPagination(rows: Customer[], page: number, rowsPerPage: number): Customer[] {
-//   return rows.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage);
-// }

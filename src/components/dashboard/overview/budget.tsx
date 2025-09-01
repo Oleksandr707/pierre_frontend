@@ -33,8 +33,8 @@ export function Budget({ diff, trend, sx }: BudgetProps): React.JSX.Element {
         if (res.ok) {
           setTodayCount(data.total);
         }
-      } catch (err) {
-        console.error('❌ Error fetching today customers:', err);
+      } catch (error) {
+        console.error('❌ Error fetching today customers:', error);
       }
     };
 
