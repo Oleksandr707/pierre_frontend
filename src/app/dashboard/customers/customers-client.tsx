@@ -81,6 +81,7 @@ export default function CustomersClient(): React.JSX.Element {
             setRowsPerPage(parseInt(e.target.value, 10));
             setPage(0);
           }}
+          refresh={fetchCustomers}
         />
       </Stack>
     );
