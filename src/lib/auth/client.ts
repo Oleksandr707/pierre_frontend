@@ -31,8 +31,8 @@ class AuthClient {
       // ✅ Fix: return the user using "data.admin" not "data.user"
       return { user: { id: data.admin.id, email: data.admin.userId } as User };
 
-    } catch (err: any) {
-      console.error("Login error:", err);
+    } catch (error: any) {
+      console.error("Login error:", error);
       return { error: "Network error, please try again" };
     }
   }

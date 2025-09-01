@@ -12,7 +12,7 @@ export interface GuestGuardProps {
 }
 
 export function GuestGuard({ children }: GuestGuardProps): React.JSX.Element | null {
-  const router = useRouter();
+ 
   const { user, error, isLoading } = useUser();
   const [isChecking, setIsChecking] = React.useState<boolean>(true);
 
@@ -28,8 +28,6 @@ export function GuestGuard({ children }: GuestGuardProps): React.JSX.Element | n
 
     if (user) {
       logger.debug('[GuestGuard]: User is logged in, redirecting to dashboard');
-      // router.replace(paths.dashboard.overview);
-      // return;
     }
 
     setIsChecking(false);

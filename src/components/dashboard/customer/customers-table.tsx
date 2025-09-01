@@ -66,8 +66,8 @@ export function CustomersTable({
       } else {
         alert('❌ ' + data.error);
       }
-    } catch (err) {
-      console.error('❌ Delete error:', err);
+    } catch (error) {
+      console.error('❌ Delete error:', error);
     }
   };
 
@@ -93,8 +93,8 @@ export function CustomersTable({
       } else {
         alert('❌ ' + data.error);
       }
-    } catch (err) {
-      console.error('❌ Update error:', err);
+    } catch (error) {
+      console.error('❌ Update error:', error);
     }
   };
 

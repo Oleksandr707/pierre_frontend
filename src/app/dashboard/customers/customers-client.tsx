@@ -3,7 +3,6 @@
 import * as React from 'react';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
-import { PlusIcon } from '@phosphor-icons/react/dist/ssr/Plus';
 import dayjs from 'dayjs';
 
 import { CustomersFilters } from '@/components/dashboard/customer/customers-filters';

@@ -31,7 +31,6 @@ export function UpdatePasswordForm(): React.JSX.Element {
 
     try {
       const token = localStorage.getItem('custom-auth-token');
-      const userId = localStorage.getItem('current-user-id'); // store this when user logs in
 
       const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/admin/password`, {
         method: 'PUT',
