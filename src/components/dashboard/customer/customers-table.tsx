@@ -36,7 +36,7 @@ interface CustomersTableProps {
   rowsPerPage: number;
   onPageChange: (event: unknown, newPage: number) => void;
   onRowsPerPageChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
-  refresh: () => void; // 👈 new: reload data after edit/delete
+  // refresh: () => void; // 👈 new: reload data after edit/delete
 }
 
 export function CustomersTable({
@@ -46,7 +46,7 @@ export function CustomersTable({
   rowsPerPage,
   onPageChange,
   onRowsPerPageChange,
-  refresh,
+  // refresh,
 }: CustomersTableProps): React.JSX.Element {
   // DELETE handler
   const handleDelete = async (cust: Customer) => {
@@ -62,7 +62,7 @@ export function CustomersTable({
       const data = await res.json();
       if (res.ok && data.success) {
         alert('✅ User deleted');
-        refresh(); // reload customer list
+        // refresh(); // reload customer list
       } else {
         alert('❌ ' + data.error);
       }
@@ -89,7 +89,7 @@ export function CustomersTable({
       const data = await res.json();
       if (res.ok && data.success) {
         alert('✅ User updated');
-        refresh(); // reload customer list
+        // refresh(); // reload customer list
       } else {
         alert('❌ ' + data.error);
       }
