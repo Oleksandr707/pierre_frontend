@@ -41,27 +41,29 @@ export function Layout({ children }: LayoutProps): React.JSX.Element {
           p: 3,
         }}
       >
-        {/* ✅ Welcome text + image moved above */}
-        <Stack spacing={3} sx={{ mb: 95, alignItems: 'center' }}>
+        <Stack spacing={3}>
           <Stack spacing={1}>
-            <Typography
-              color="inherit"
-              sx={{ fontSize: '36px', lineHeight: '32px', textAlign: 'center' }}
-              variant="h2"
-            >
+            <Typography color="inherit" sx={{ fontSize: '24px', lineHeight: '32px', textAlign: 'center' }} variant="h1">
               Welcome to{' '}
+              <Box component="span" sx={{ color: '#15b79e' }}>
+                PIERRE
+              </Box>
             </Typography>
           </Stack>
-          <Box
-            component="img"
-            alt="Climbing wall"
-            src="/assets/auth-widgets.png"
-            sx={{
-              width: '60%',
-              height: 'auto',
-              objectFit: 'contain',
-            }}
-          />
+          <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flex: 1 }}>
+            <Box
+              component="img"
+              alt="Climbing wall"
+              src="/assets/auth-widgets.jpg"
+              sx={{
+                width: '100%',
+                height: '100vh',
+                objectFit: 'cover',   // 👈 keeps aspect ratio while filling
+              }}
+            />
+          </Box>
+
+
         </Stack>
       </Box>
     </Box>
