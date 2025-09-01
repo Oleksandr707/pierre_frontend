@@ -1,7 +1,6 @@
 'use client';
 
 import * as React from 'react';
-import { useRouter } from 'next/navigation';
 import Alert from '@mui/material/Alert';
 
 import { logger } from '@/lib/default-logger';
